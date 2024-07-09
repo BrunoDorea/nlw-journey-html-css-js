@@ -1,8 +1,8 @@
-# Plan.ner (NLW Journey - Trilha FullStack)
+# Plann.er (NLW Journey - Trilha FullStack)
 
-[![wakatime](https://wakatime.com/badge/user/68660678-6b86-4b78-98df-f5f41a37e1bc.svg)](https://wakatime.com/@68660678-6b86-4b78-98df-f5f41a37e1bc)
+[![wakatime](https://wakatime.com/badge/user/68660678-6b86-4b78-98df-f5f41a37e1bc/project/b9e4b622-bdd3-4e22-906b-c8653dd68d73.svg)](https://wakatime.com/badge/user/68660678-6b86-4b78-98df-f5f41a37e1bc/project/b9e4b622-bdd3-4e22-906b-c8653dd68d73)
 
-[![GitHub Pages](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub+Pages&color=222222&logo=GitHub+Pages&logoColor=FFFFFF&label=)](https://brunodorea.github.io/)
+[![GitHub Pages](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub+Pages&color=222222&logo=GitHub+Pages&logoColor=FFFFFF&label=)](https://brunodorea.github.io/nlw-journey-html-css-js/)
 
 ## 💼 Sobre o projeto
 
@@ -14,7 +14,9 @@ Criação de um app de roteiro de viagens.
 
 ## 💻 Tecnologias e Ferramentas
 
-A.
+![HTML5](https://img.shields.io/static/v1?style=for-the-badge&message=HTML5&color=E34F26&logo=HTML5&logoColor=FFFFFF&label=)
+![CSS3](https://img.shields.io/static/v1?style=for-the-badge&message=CSS3&color=1572B6&logo=CSS3&logoColor=FFFFFF&label=)
+![JavaScript](https://img.shields.io/static/v1?style=for-the-badge&message=JavaScript&color=222222&logo=JavaScript&logoColor=F7DF1E&label=)
 
 ## 👨🏽‍💻 Autor
 

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <!-- JAVASCRIPT -->
     <script defer src="./src/js/main.js"></script>
-    <title>plan.ner | Bruno Dórea</title>
+    <title>plann.er | Bruno Dórea</title>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +22,12 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- dayJS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>
+      dayjs.locale("pt-br");
+    </script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -38,7 +44,29 @@
   </head>
 
   <body>
-    <h1>Atividades</h1>
-    <section id="atividades"></section>
+    <form onsubmit="salvarAtividade(event)">
+      <div>
+        <input type="text" placeholder="Qual a atividade?" name="atividade" required/>
+      </div>
+
+      <div>
+        <select name="dia">
+          <option value="2024-03-01">01 de fevereiro</option>
+        </select>
+      </div>
+
+      <div>
+        <select name="hora">
+          <option value="10:30">10:30</option>
+        </select>
+      </div>
+
+      <button>Salvar atividade</button>
+    </form>
+
+    <main>
+      <h1>Atividades</h1>
+      <section id="atividades"></section>
+    </main>
   </body>
 </html>
