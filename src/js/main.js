@@ -5,11 +5,7 @@ const atividades = [
 ];
 
 const criarItemDeAtividade = (atividade) => {
-  let input = '<input type="checkbox"';
-  if (atividade.finalizada) {
-    input = input + " checked";
-  }
-  input = input + "/>";
+  let input = `<input type="checkbox" ${atividade.finalizada ? 'checked' : ''} />`;
 
   return `<div>
     ${input}
