@@ -13,8 +13,8 @@ const formatador = (data) => {
 }
 
 let atividades = [
-  { nome: "Almoço", data: new Date("2024-07-08 12:00"), finalizada: false },
   { nome: "Academia em grupo", data: new Date("2024-07-08 10:00"), finalizada: true },
+  { nome: "Almoço", data: new Date("2024-07-08 12:00"), finalizada: false },
   { nome: "Sessão de jogos", data: new Date("2024-07-08 16:00"), finalizada: true },
 ];
 
@@ -30,13 +30,27 @@ const criarItemDeAtividade = (atividade) => {
   const formatar = formatador(atividade.data);
 
   return `
-    <div>
+    <div class="card-bg">
       ${input}
-      <span>${atividade.nome}</span>
-      <time>${formatar.dia.semana.longo}, 
-      dia ${formatar.dia.numerico}
-      de ${formatar.mes} 
-      às ${formatar.hora}h </time>
+      
+      <div>
+        <img src="./src/images/circle-check.svg" class="active" />
+        <img src="./src/images/circle-dashed.svg" class="inactive" />
+        <span>${atividade.nome}</span>
+      </div>
+      
+      <time class="short">
+        ${formatar.dia.semana.curto}.
+        ${formatar.dia.numerico}
+        <br>
+        ${formatar.hora}h
+      </time>
+      <time class="full">
+        ${formatar.dia.semana.longo},
+        dia ${formatar.dia.numerico}
+        de ${formatar.mes} 
+        às ${formatar.hora}h
+      </time>
     </div>
     `
 }
@@ -135,7 +149,7 @@ const concluirAtividade = (event) => {
     return atividade.data == dataDesteInput
   })
 
-  if(!atividade) {
+  if (!atividade) {
     return
   }
 
